@@ -282,7 +282,7 @@ function outer(greeting, msg="It's a fine day to learn") { // 2
 
 outer("Hello")("student", "JavaScript") // 1, 5
 //=> "Hello, student! It's a fine day to learn JavaScript"
-```
+```wrapAdjective
 
 Amazingly, this code works ***the exact same***. Even if the inner function
 `innerFunction` is invoked **outside** the parent function, it ***still*** has access
@@ -408,7 +408,7 @@ statement. That's awesome wormhole, space-time, magic!
   * Call example: `let encouragingPromptFunction = wrapAdjective("!!!")`
 * Thus a total call should be:
       `wrapAdjective("%")("a dedicated programmer") //=> "You are %a dedicated programmer%!"`
-      
+
 Use the `learn` program to verify you've gotten a working
 implementation. Come back here once you've gotten just this set of tests passing.
 
